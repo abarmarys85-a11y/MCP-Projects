@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+.venv312/
+
+# Datasets grandes (se descargan localmente con load_db.py)
+**/datasets/compras-ocds/
+**/datasets/delitos_sexuales/data/*.csv
+*.db
+*.sqlite
+
+# Misc
+.DS_Store

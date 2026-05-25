@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1600 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; fill: #333; }
+      .subtitle { font-size: 14px; fill: #666; font-style: italic; }
+      .kpi-label { font-size: 16px; font-weight: bold; fill: #333; }
+      .kpi-value { font-size: 48px; font-weight: bold; }
+      .kpi-text { font-size: 12px; fill: #666; }
+      .chart-title { font-size: 18px; font-weight: bold; fill: #333; }
+      .axis-label { font-size: 12px; fill: #333; }
+      .grid-line { stroke: #ddd; stroke-width: 1; }
+      .data-point { font-size: 11px; font-weight: bold; fill: #333; }
+      .conclusion { font-size: 11px; fill: #333; font-weight: 500; }
+    </style>
+  </defs>
+  
+  <!-- Fondo -->
+  <rect width="1600" height="1200" fill="#f8f9fa"/>
+  
+  <!-- Título -->
+  <text x="800" y="50" text-anchor="middle" class="title">📊 Análisis de Crímenes Sexuales en Montevideo (2018-2024)</text>
+  <text x="800" y="72" text-anchor="middle" class="subtitle">Fuente: Catálogo de Datos Abiertos del Estado Uruguayo</text>
+  
+  <!-- KPI 1: Total Eventos -->
+  <rect x="50" y="100" width="480" height="180" fill="#f0f4ff" stroke="#667eea" stroke-width="3" rx="10"/>
+  <text x="290" y="140" text-anchor="middle" class="kpi-label">🎯 TOTAL EVENTOS</text>
+  <text x="290" y="200" text-anchor="middle" class="kpi-value" fill="#667eea">7,801</text>
+  <text x="290" y="230" text-anchor="middle" class="kpi-text">Período 2018-2024 | ↑ +45.9%</text>
+  
+  <!-- KPI 2: Año Crítico -->
+  <rect x="560" y="100" width="480" height="180" fill="#fffbf0" stroke="#f39c12" stroke-width="3" rx="10"/>
+  <text x="800" y="140" text-anchor="middle" class="kpi-label">📅 AÑO MÁS CRÍTICO</text>
+  <text x="800" y="200" text-anchor="middle" class="kpi-value" fill="#f39c12">2022</text>
+  <text x="800" y="230" text-anchor="middle" class="kpi-text">1,169 eventos | ↓ -5.6% (2023-24)</text>
+  
+  <!-- KPI 3: Montevideo % -->
+  <rect x="1070" y="100" width="480" height="180" fill="#f0f8ff" stroke="#3498db" stroke-width="3" rx="10"/>
+  <text x="1310" y="140" text-anchor="middle" class="kpi-label">📍 % NACIONAL</text>
+  <text x="1310" y="200" text-anchor="middle" class="kpi-value" fill="#3498db">33.4%</text>
+  <text x="1310" y="230" text-anchor="middle" class="kpi-text">4,889 de 14,633 | Líder nacional</text>
+  
+  <!-- Separador -->
+  <line x1="50" y1="310" x2="1550" y2="310" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- GRÁFICA 1: TENDENCIA ANUAL (Izquierda) -->
+  <text x="300" y="360" text-anchor="middle" class="chart-title">Tendencia Anual de Eventos</text>
+  
+  <!-- Línea de tendencia -->
+  <polyline points="80,520 180,400 280,415 380,300 480,200 580,205 680,300" 
+            fill="none" stroke="#667eea" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="80" cy="520" r="6" fill="#667eea"/>
+  <circle cx="180" cy="400" r="6" fill="#667eea"/>
+  <circle cx="280" cy="415" r="6" fill="#667eea"/>
+  <circle cx="380" cy="300" r="6" fill="#667eea"/>
+  <circle cx="480" cy="200" r="6" fill="#667eea"/>
+  <circle cx="580" cy="205" r="6" fill="#667eea"/>
+  <circle cx="680" cy="300" r="6" fill="#667eea"/>
+  
+  <!-- Etiquetas de años -->
+  <text x="80" y="560" text-anchor="middle" class="axis-label">2018</text>
+  <text x="180" y="560" text-anchor="middle" class="axis-label">2019</text>
+  <text x="280" y="560" text-anchor="middle" class="axis-label">2020</text>
+  <text x="380" y="560" text-anchor="middle" class="axis-label">2021</text>
+  <text x="480" y="560" text-anchor="middle" class="axis-label">2022</text>
+  <text x="580" y="560" text-anchor="middle" class="axis-label">2023</text>
+  <text x="680" y="560" text-anchor="middle" class="axis-label">2024</text>
+  
+  <!-- Valores en puntos -->
+  <text x="80" y="480" text-anchor="middle" class="data-point">756</text>
+  <text x="180" y="360" text-anchor="middle" class="data-point">993</text>
+  <text x="280" y="375" text-anchor="middle" class="data-point">955</text>
+  <text x="380" y="260" text-anchor="middle" class="data-point">1,057</text>
+  <text x="480" y="160" text-anchor="middle" class="data-point">1,169</text>
+  <text x="580" y="165" text-anchor="middle" class="data-point">1,168</text>
+  <text x="680" y="260" text-anchor="middle" class="data-point">1,103</text>
+  
+  <!-- Ejes -->
+  <line x1="70" y1="530" x2="690" y2="530" stroke="#333" stroke-width="2"/>
+  <line x1="70" y1="530" x2="70" y2="160" stroke="#333" stroke-width="2"/>
+  <text x="40" y="350" text-anchor="end" class="axis-label" transform="rotate(-90 40 350)">Eventos</text>
+  <text x="380" y="600" text-anchor="middle" class="axis-label">Años</text>
+  
+  <!-- GRÁFICA 2: TIPOS DE DELITO 2024 (Derecha-Arriba) -->
+  <text x="1200" y="360" text-anchor="middle" class="chart-title">Delitos 2024 (1,103 total)</text>
+  
+  <!-- Pie chart simplificado -->
+  <circle cx="1200" cy="450" r="80" fill="#e74c3c" opacity="0.8"/>
+  <text x="1200" y="455" text-anchor="middle" class="data-point" fill="white" font-weight="bold">83.6%</text>
+  <text x="1200" y="570" text-anchor="middle" class="axis-label">Abuso Sexual: 923</text>
+  
+  <circle cx="1350" cy="450" r="25" fill="#f39c12" opacity="0.8"/>
+  <text x="1350" y="458" text-anchor="middle" class="data-point" fill="white" font-size="10">9.4%</text>
+  <text x="1350" y="510" text-anchor="middle" class="axis-label" font-size="10">Atentado: 104</text>
+  
+  <circle cx="1450" cy="450" r="18" fill="#3498db" opacity="0.8"/>
+  <text x="1450" y="457" text-anchor="middle" class="data-point" fill="white" font-size="9">6.9%</text>
+  <text x="1450" y="510" text-anchor="middle" class="axis-label" font-size="10">Violación: 76</text>
+  
+  <!-- Separador 2 -->
+  <line x1="50" y1="650" x2="1550" y2="650" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- GRÁFICA 3: EVOLUCIÓN DE ABUSOS (Full Width) -->
+  <text x="800" y="710" text-anchor="middle" class="chart-title">Evolución: Abuso Sexual (Delito Principal) - Crecimiento +405% (2018→2024)</text>
+  
+  <!-- Barras de abusos sexuales -->
+  <rect x="100" y="800" width="40" height="100" fill="#e74c3c" opacity="0.8"/>
+  <text x="120" y="920" text-anchor="middle" class="data-point">183</text>
+  <text x="120" y="950" text-anchor="middle" class="axis-label">2018</text>
+  
+  <rect x="180" y="650" width="40" height="250" fill="#e74c3c" opacity="0.8"/>
+  <text x="200" y="920" text-anchor="middle" class="data-point">514</text>
+  <text x="200" y="950" text-anchor="middle" class="axis-label">2019</text>
+  
+  <rect x="260" y="580" width="40" height="320" fill="#e74c3c" opacity="0.8"/>
+  <text x="280" y="920" text-anchor="middle" class="data-point">623</text>
+  <text x="280" y="950" text-anchor="middle" class="axis-label">2020</text>
+  
+  <rect x="340" y="470" width="40" height="430" fill="#e74c3c" opacity="0.8"/>
+  <text x="360" y="920" text-anchor="middle" class="data-point">760</text>
+  <text x="360" y="950" text-anchor="middle" class="axis-label">2021</text>
+  
+  <rect x="420" y="300" width="40" height="600" fill="#e74c3c" opacity="0.8"/>
+  <text x="440" y="920" text-anchor="middle" class="data-point">957</text>
+  <text x="440" y="950" text-anchor="middle" class="axis-label">2022</text>
+  
+  <rect x="500" y="325" width="40" height="575" fill="#e74c3c" opacity="0.8"/>
+  <text x="520" y="920" text-anchor="middle" class="data-point">929</text>
+  <text x="520" y="950" text-anchor="middle" class="axis-label">2023</text>
+  
+  <rect x="580" y="335" width="40" height="565" fill="#e74c3c" opacity="0.8"/>
+  <text x="600" y="920" text-anchor="middle" class="data-point">923</text>
+  <text x="600" y="950" text-anchor="middle" class="axis-label">2024</text>
+  
+  <!-- Eje Y para barras -->
+  <line x1="90" y1="900" x2="620" y2="900" stroke="#333" stroke-width="2"/>
+  <line x1="90" y1="900" x2="90" y2="250" stroke="#333" stroke-width="2"/>
+  <text x="40" y="575" text-anchor="end" class="axis-label" transform="rotate(-90 40 575)">Casos</text>
+  
+  <!-- Conclusiones -->
+  <rect x="50" y="1050" width="1500" height="90" fill="#fff9e6" stroke="#f39c12" stroke-width="2" rx="8"/>
+  <text x="800" y="1080" text-anchor="middle" class="conclusion" font-size="13" font-weight="bold">✅ Conclusiones Clave:</text>
+  <text x="800" y="1105" text-anchor="middle" class="conclusion">• Montevideo lidera con 33.4% de crímenes sexuales nacionales  |  • Pico máximo en 2022 con 1,169 eventos</text>
+  <text x="800" y="1125" text-anchor="middle" class="conclusion">• Reducción de 5.6% en últimos 2 años  |  • Abuso sexual es 83.6% de los casos (923 de 1,103 en 2024)</text>
+</svg>
